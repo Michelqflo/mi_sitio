@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Documente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <script>
+        //Definicion de objetos
+        const persona = {
+            nombre: 'Juan',
+            edad: 20,
+            estado: true,
+            caracteristicas: ["moreno","165cm",60]
+        }
+        //Agregando un atributo/propiedad
+        persona.dni = 29292929;
+
+        //Lectura primera forma
+        console.log(persona);
+        let xNombre = persona.nombre;
+        console.log(xNombre);
+
+        let xEdad = persona.edad;
+        console.log(xEdad);
+
+        let xEstructura = persona.caracteristicas[1];
+        console.log(xEstructura);
+
+        //Lectura segunda forma
+        const {nombre, edad, dni} = persona;
+        console.log(nombre);
+        console.log(edad);
+        console.log(dni);
+
+        //Lectura tercera forma con comilla invertida(ALT + 96)
+        alert("El nombre es: " + nombre);
+        alert("La edad es: " + edad);
+        alert(`El NOMBRE es: ${nombre} y EDAD es ${edad}`);
+    </script>
+</body>
+</html>

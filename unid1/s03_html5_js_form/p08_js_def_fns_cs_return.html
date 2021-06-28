@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        //FUNCIONES SIN RETORNO
+        function fnPrueba1(xValor){
+            document.writeln("Mensaje desde... " + xValor);   //Mostrar en navegador
+        }
+        const fnPrueba2 = (xValor) => {
+            document.writeln("Mensaje desde..." + xValor);    //Mostrar en navegador
+        }
+
+        //FUNCIONES CON RETORNO
+        function fnPrueba3(xValor){
+            document.writeln("Mensaje desde..." + xValor);    //Mostrar en navegador
+            return "Hola... fin con retorno";                 //Retorno
+        }
+        const fnPrueba4 = (xValor) => {
+            document.writeln("Mensaje desde..." + xValor);    //Mostrar en navegador
+            return "Hola... fin FLECHA con retorno";          //Retorno
+        }
+
+        //OTRAS FORMAS DE DEFINIR LA FUNCION FLECHA
+        const fnPrueba5 = (xValor) => document.writeln("Mensaje desde..." + xValor);    //error
+        const fnPrueba6 = (xValor) => ("Hola... fn FLECHA con retorno");
+    </script>
+</head>
+<body>
+    <h1>Definicion de funciones</h1>
+    <button type="button" onclick="fnPrueba1('1. FN sin retorno');">1. Funcion sin retorno</button> <br/>
+    <button type="button" onclick="fnPrueba2('2. FN flecha sin retorno');">2. Funcion flecha sin retorno</button> <br/>
+    <button type="button" onclick="alert(fnPrueba3('3. FN con retorno'));">3. Funcion con retorno</button> <br/> 
+    <button type="button" onclick="alert(fnPrueba4('4. FN flecha con retorno'));">4. Funcion flecha con retorno</button> <br/> 
+    <button type="button" onclick="alert(fnPrueba5('5. FN flecha sin retorno simple'));">5. Funcion flecha sin retorno simple</button> <br/> 
+    <button type="button" onclick="alert(fnPrueba6('6. FN flecha con retorno simple'));">6. Funcion flecha con retorno simple</button> <br/> 
+
+</body>
+</html>

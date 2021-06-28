@@ -1,0 +1,41 @@
+.contenedor1{
+    background-color: aqua;
+    display: flex; /*le hace flexible se fueron a la derecha*/ 
+    flex-wrap: wrap;
+}
+
+
+.contenedor1 div{
+    background-color: burlywood;
+    margin: 5px;    /*a todos los lados*/
+    padding: 10px;  /* espacio del borde con el contenido*/
+
+}
+
+.contenedor2{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.contenedor2 div{
+    background-color: cadetblue; 
+    margin: 10px 5px;
+    padding: 5px;
+    width: 50px;
+}
+
+.contenedor3{
+    background-color: chartreuse;
+    display: flex;
+    flex-flow: row wrap-reverse;
+   
+}
+
+.contenedor3 div{
+    background-color: darkkhaki;
+    margin: 10px 5px;
+    padding: 5px;
+    width: 50px;
+}
